@@ -5,9 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="poke.css" rel="stylesheet">
 </head>
 
 <body>
+    <nav class="navbar">
+        <a href="/saved">Saved</a>
+        <a href="/">
+            <img id="logo" src="https://1000logos.net/wp-content/uploads/2017/05/Pokemon-Logo.png" />
+        </a>
+        <a href="/about">About</a>
+    </nav>
+
+    <div class="main-container">
+        <h1>Create Your Pokemon</h1>
+
+        <div class="input-group">
+            <label for="pokename">Enter Name</label>
+            <input id="name" name="pokename" type="text">
+        </div>
+
+        <div class="input-group">
+            <label for="poketype">Enter Name</label>
+
+            <select name="poketype" id="poketype">
+                <option value="fire">Fire</option>
+                <option value="water">Water</option>
+                <option value="electric">Electric</option>
+                <option value="ground">Ground</option>
+            </select>
+        </div>
+
+        <button id="submit">Submit</button>
+
+    </div>
+
     <script type="module" src="poke.js"></script>
 
 </body>
